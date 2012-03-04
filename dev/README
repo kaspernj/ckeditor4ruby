@@ -1,0 +1,2 @@
+Run "ruby knjappserver_start.rb" which starts a development-webserver on 0.0.0.0:8085. Access this URL to see an instance of CKEditor running in browser.
+

@@ -1,0 +1,29 @@
+<html>
+<head>
+  <title>ckeditor4ruby development</title>
+  
+  <script src="ckedtior/adapters/jquery.js"></script>
+  <script src="ckeditor/ckeditor.js"></script>
+</head>
+<body>
+  <%
+    if _get["choice"] == "dosave"
+      %>
+        Result of posting was:
+        <pre><%
+          print Knj::Web.html(Knj::Php.print_r(_post, true))
+        %></pre>
+      <%
+    else
+      %>
+        <form method="post" action="?choice=dosave">
+        <%
+          ckeditor = CKEditor.new
+          print ckeditor.editor("text_test", "<b>Test content</b>")
+        %>
+        </form>
+      <%
+    end
+  %>
+</body>
+</html>
