@@ -1,6 +1,15 @@
 = ckeditor4ruby
 
-Description goes here.
+Under Erubis and Knjappserver this actually works atm. (index.rhtml):
+ <%
+  require "#{File.dirname(__FILE__)}/ckeditor/ckeditor.rb"
+  ckeditor = CKEditor.new("/ckeditor")
+  ckeditor.on_meta do
+    _meta
+  end
+  
+  print ckeditor.editor("texcontent", "<b>Test-content</b>")
+ %>
 
 == Contributing to ckeditor4ruby
  
@@ -14,6 +23,4 @@ Description goes here.
 
 == Copyright
 
-Copyright (c) 2012 Kasper Johansen. See LICENSE.txt for
-further details.
-
+See LICENSE.txt for further details.
