@@ -18,6 +18,11 @@
 
 
 class CKEditor
+  #Returns the path.
+  def self.path
+    return File.realpath(File.dirname(__FILE__))
+  end
+  
   #The version of %CKEditor.
   VERSION = '3.6.2'
   
