@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Kasper Johansen"]
   s.date = %q{2012-07-19}
-  s.description = %q{TODO: ckeditor-port in Ruby. Supposed to be dynamic enough to work in Rails in various other Ruby-environtments or -application-servers.}
+  s.description = %q{CKEditor-port for Ruby.}
   s.email = %q{k@spernj.org}
   s.extra_rdoc_files = [
     "LICENSE.txt",
@@ -249,6 +249,7 @@ Gem::Specification.new do |s|
     "ckeditor/skins/v2/skin.js",
     "ckeditor/skins/v2/templates.css",
     "ckeditor/themes/default/theme.js",
+    "ckeditor4ruby.gemspec",
     "dev/README",
     "dev/index.rhtml",
     "dev/knjappserver_start.rb",
@@ -260,7 +261,7 @@ Gem::Specification.new do |s|
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.6.2}
-  s.summary = %q{TODO: ckeditor for Ruby}
+  s.summary = %q{CKEditor-port for Ruby.}
 
   if s.respond_to? :specification_version then
     s.specification_version = 3
